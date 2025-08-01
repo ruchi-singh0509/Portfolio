@@ -144,7 +144,7 @@ export const serviceData = [
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages & Databases', description: 'Python,Javascript, Typescript, Django, Node.js, React.js, HTML/CSSS, SQL, NoSQL' },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages & Databases', description: 'Python,Javascript, Angular,Typescript, Django, Node.js, React.js, HTML/CSSS, SQL, NoSQL' },
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Development Tools& Devops', description: 'Git, Vite, Playwright, Docker, CI/CD, JIRA, AWS, Agile/Scrum methodologies' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Mechanical Engineering' },
 
