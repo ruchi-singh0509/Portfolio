@@ -6,6 +6,8 @@ import Services from "@/components/Services";
 import Work from "@/components/Work";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import ScrollProgress from "@/components/ScrollProgress";
+import BackToTop from "@/components/BackToTop";
 import { useEffect, useState } from "react";
 
 
@@ -36,13 +38,15 @@ export default function Home() {
   }, [isDarkMode])
   return (
     <>
-      <Navbar  isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
+      <ScrollProgress />
+      <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <Header isDarkMode={isDarkMode} />
-      <About  isDarkMode={isDarkMode}/>
+      <About isDarkMode={isDarkMode} />
       <Services isDarkMode={isDarkMode} />
       <Work isDarkMode={isDarkMode} />
-      <Contact  isDarkMode={isDarkMode}/>
-      <Footer  isDarkMode={isDarkMode}/>
+      <Contact isDarkMode={isDarkMode} />
+      <Footer isDarkMode={isDarkMode} />
+      {/* <BackToTop /> */}
     </>
   );
 }

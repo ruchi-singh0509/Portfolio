@@ -35,12 +35,17 @@ import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import jira from './jira.png';
-import jenkins from './jenkins.png';
 import selenium from './selenium.png';
 import python_icon from './python_icon.png';
 import profile_img from './profile_img.png';
 import docker from './docker.png';
 import ai_icon from './ai_icon.png';
+import aws from './aws.png';
+import ci_cd from './ci-cd.png';
+import dart from './dart.png';
+import flutter from './flutter.png';
+import mysql from './mysql.png';
+import react_icon from './react.svg';
 
 
 export const assets = {
@@ -83,11 +88,17 @@ export const assets = {
     right_arrow_bold,
     right_arrow_bold_dark,
     jira,
-    jenkins,
     selenium,
     python_icon,
     docker,
+    aws,
+    ci_cd,
+    dart,
+    flutter,
+    mysql,
+    react_icon,
 };
+
 
 export const workData = [
     {
@@ -118,15 +129,20 @@ export const workData = [
 
 export const serviceData = [
     {
-        icon: assets.python_icon,
-        title: 'Backend Development',
-        description: 'Design and build robust, scalable backend systems using Django, Python, Node.js, and MySQL. Expertise in REST APIs, authentication, and database design.',
-
-    },
-    {
         icon: assets.web_icon,
         title: 'Full Stack Development',
         description: 'Develop end-to-end web applications with React.js, Node.js, MongoDB, and Stripe. Experience in building production-ready, user-friendly platforms.',
+
+    },
+    {
+        icon: assets.mobile_icon,
+        title: 'Mobile App Development',
+        description: 'Build cross-platform mobile applications using Flutter and Dart. delivering high-performance, native-like experiences for both iOS and Android.',
+    },
+    {
+        icon: assets.python_icon,
+        title: 'Backend Development',
+        description: 'Design and build robust, scalable backend systems using Django, Python, Node.js, and MySQL. Expertise in REST APIs, authentication, and database design.',
 
     },
     {
@@ -135,28 +151,29 @@ export const serviceData = [
         description: 'Build intelligent chatbots and AI-powered applications using Python, Rasa, Node.js, and OpenAI. Skilled in NLP, voice interfaces, and automation.',
 
     },
-    {
-        icon: assets.ui_icon,
-        title: 'Frontend Development',
-        description: 'Create beautiful, responsive UIs with React.js, Next.js, and modern CSS frameworks. Focus on performance, accessibility, and user experience.',
-
-    },
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages & Databases', description: 'Python,Javascript, Angular,Typescript, Django, Node.js, React.js, HTML/CSSS, SQL, NoSQL' },
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Development Tools& Devops', description: 'Git, Vite, Playwright, Docker, CI/CD, JIRA, AWS, Agile/Scrum methodologies' },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages & Frameworks', description: 'Python, JavaScript, TypeScript, Dart, React.js, Next.js, Django, Node.js, Flutter, HTML/CSS, SQL (MySQL), NoSQL (MongoDB)' },
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Tools & DevOps', description: 'Git, Docker, AWS, CI/CD, JIRA, Selenium, VS Code, Figma' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Mechanical Engineering' },
 
 ];
 
 export const toolsData = [
     { img: assets.vscode, label: 'VS Code' },
-    { img: assets.jenkins, label: 'Jenkins' },
+    { img: assets.firebase, label: 'Firebase' },
     { img: assets.mongodb, label: 'MongoDB' },
     { img: assets.figma, label: 'Figma' },
     { img: assets.git, label: 'Git' },
     { img: assets.jira, label: 'Jira' },
     { img: assets.selenium, label: 'Selenium' },
     { img: assets.docker, label: 'Docker' },
+    { img: assets.aws, label: 'AWS' },
+    { img: assets.ci_cd, label: 'CI/CD' },
+    { img: assets.python_icon, label: 'Python' },
+    { img: assets.react_icon, label: 'React' },
+    { img: assets.flutter, label: 'Flutter' },
+    { img: assets.dart, label: 'Dart' },
+    { img: assets.mysql, label: 'MySQL' },
 ];

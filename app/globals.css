@@ -1,7 +1,37 @@
+html,
+body {
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background: linear-gradient(to bottom, #5E3181 0%, #515393 50%, #416EA3 100%);
+  color: white;
+}
+
+html.dark,
+body.dark {
+  background: #000000;
+  color: white;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 * {
   font-family: Outfit;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease;
 }

@@ -5,11 +5,7 @@ import { motion } from "motion/react"
 
 const Header = () => {
     return (
-        <div id='home' className='w-full text-center mx-auto h-screen flex flex-col items-center justify-center gap-4 relative overflow-hidden pb-32 pt-48'>
-            {/* Background gradient for subtle visual depth */}
-            <div className="absolute inset-0 -z-10 bg-gradient-to-br from-accent/10 via-secondary/10 to-accent-dark/10 dark:from-black/60 dark:via-darkTheme/60 dark:to-background-dark/60 opacity-80 blur-xl" />
-            {/* Soft gradient fade for seamless section transition */}
-            <div className="absolute bottom-0 left-0 w-full h-64 pointer-events-none -z-10 bg-gradient-to-b from-transparent via-background-light/80 to-background-light dark:from-transparent dark:via-background-dark/80 dark:to-background-dark" />
+        <div id='home' className='w-full text-center mx-auto min-h-screen flex flex-col items-center justify-center gap-4 relative overflow-x-hidden py-32 px-4 sm:px-8 md:px-[12%]'>
             <motion.div
                 initial={{ y: -20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
@@ -40,7 +36,7 @@ const Header = () => {
                 className='max-w-2xl mx-auto font-Ovo text-base text-text-light/80 dark:text-text-dark/80 px-4'>
                 I am dedicated to solving complex challenges and creating seamless digital experiences.
             </motion.p>
-            <div className='flex flex-col sm:flex-row items-center gap-4 mt-4 justify-center'>
+            <div className='flex flex-col sm:flex-row items-center gap-4 mt-4 mb-8 justify-center'>
                 <motion.a
                     initial={{ y: 30, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
@@ -55,8 +51,8 @@ const Header = () => {
                     initial={{ y: 30, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.6, delay: 1.2 }}
-                    href="/Resume Ruchi Singh.__.pdf"
-                    download="Resume Ruchi Singh.__.pdf"
+                    href="/Resume Ruchi Singh.fs.__.pdf"
+                    download
                     className='btn flex items-center justify-center gap-2 bg-gradient-to-r from-secondary via-accent to-pink-400 text-white shadow-2xl border-2 border-white/30 hover:from-accent hover:to-secondary focus:ring-4 focus:ring-accent/40 focus:outline-none animate-gradient-move text-lg px-8 py-3 rounded-full font-semibold min-w-[160px]'>
                     Resume <Image src={assets.download_icon} alt='download resume' className='w-4' />
                 </motion.a>

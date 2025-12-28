@@ -13,16 +13,17 @@ const ovo = Ovo({
 
 
 export const metadata = {
-  title: "Portfolio-Ruchi",
-  description: "build by using next.js",
+  title: "Ruchi Singh | Full Stack Developer",
+  description: "Portfolio of Ruchi Singh, a Full Stack Developer specializing in React, Node.js, and AI/ML solutions.",
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth dark">
-      <body
-        className={`${outfit.className} ${ovo.className} antialiased leading-8 overflow-x-hidden dark:bg-darkTheme dark:text-white`}
-      >
+      <body className="min-h-screen w-full px-0 overflow-x-hidden dark:bg-[#18181b]">
         {children}
       </body>
     </html>

@@ -12,7 +12,7 @@ export default {
       colors: {
         lightHover: '#f5f3ff', // very light purple
         darkHover: '#2a004a',
-        darkTheme: '#0a0014', // deeper black for dark mode
+        darkTheme: '#000000', // deeper black for dark mode
         accent: {
           DEFAULT: '#7C3AED', // main purple
           light: '#A78BFA',   // light purple
@@ -25,14 +25,14 @@ export default {
         },
         background: {
           light: '#F3F0FF',   // soft purple-tinted white
-          dark: '#18181B',    // dark gray/black
+          dark: '#000000',    // dark gray/black
         },
         border: {
           light: '#E5E7EB',
           dark: '#27272A',
         },
         text: {
-          light: '#18181B',
+          light: '#F3F4F6', // Changed to light for visibility on dark background
           dark: '#F3F4F6',
         },
       },
@@ -53,6 +53,17 @@ export default {
         'colors': 'color, background-color, border-color, text-decoration-color, fill, stroke',
         'spacing': 'margin, padding',
         'all': 'all',
+      },
+      animation: {
+        'gradient-move': 'gradient-move 6s ease infinite',
+        'spin-slow': 'spin 6s linear infinite',
+      },
+      keyframes: {
+        'gradient-move': {
+          '0%': { backgroundPosition: '0% 50%', backgroundSize: '200% 200%' },
+          '50%': { backgroundPosition: '100% 50%', backgroundSize: '200% 200%' },
+          '100%': { backgroundPosition: '0% 50%', backgroundSize: '200% 200%' },
+        },
       },
     },
   },

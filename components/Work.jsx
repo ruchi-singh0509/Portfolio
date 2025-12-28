@@ -21,16 +21,12 @@ const Work = (isDarkMode) => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            id='work' className='w-full px-[12%] py-16 scroll-mt-20 relative'>
-            {/* Background gradient for visual interest */}
-            <div className="absolute -top-32 right-0 w-[700px] h-[420px] bg-gradient-to-br from-accent/10 via-secondary/10 to-accent-dark/10 dark:from-black/60 dark:via-darkTheme/60 dark:to-background-dark/60 rounded-full blur-2xl opacity-60 -z-10" />
-            {/* Subtle background pattern */}
-            <div className="absolute left-0 bottom-0 w-1/2 h-32 bg-[radial-gradient(ellipse_at_left,_var(--tw-gradient-stops))] from-accent/5 via-secondary/5 to-transparent -z-10" />
+            id='work' className='w-full px-4 sm:px-8 md:px-[12%] py-16 scroll-mt-20 relative'>
             <motion.h4
                 initial={{ y: -20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.5 }}
-                className='text-center mb-2 text-lg font-Ovo text-accent drop-shadow-lg'>Portfolio</motion.h4>
+                className='text-center mb-2 text-lg font-Ovo text-white  drop-shadow-lg'>Portfolio</motion.h4>
             <motion.h2
                 initial={{ y: -20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
@@ -66,10 +62,10 @@ const Work = (isDarkMode) => {
                             blurDataURL='/work-1.png'
                             sizes="(max-width: 768px) 100vw, 33vw"
                         />
-                        <div className='bg-white/90 dark:bg-darkTheme/90 w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex flex-col items-center justify-between duration-500 group-hover:bottom-7 shadow-xl z-20'>
+                        <div className='bg-white/60 dark:bg-darkTheme/60 backdrop-blur-md w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex flex-col items-center justify-between duration-500 group-hover:bottom-7 shadow-xl z-20'>
                             <div>
-                                <h2 className='font-semibold text-accent'>{project.title}</h2>
-                                <p className='text-sm text-gray-700 dark:text-white/80'>{project.description}</p>
+                                <h2 className='font-semibold text-gray-700 dark:text-white'>{project.title}</h2>
+                                <p className='text-sm text-gray-600 dark:text-white/80'>{project.description}</p>
                             </div>
                             <div className='border rounded-full border-accent w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#7C3AED] group-hover:bg-gradient-to-br group-hover:from-accent group-hover:via-pink-400 group-hover:to-secondary group-hover:shadow-xl transition group-hover:scale-110 animate-gradient-move'>
                                 <a href={project.link || 'https://github.com/ruchi-singh0509?tab=repositories'}
