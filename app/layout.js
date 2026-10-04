@@ -1,31 +1,15 @@
-import { Outfit, Ovo } from "next/font/google";
-import "./globals.css";
-
-const outfit = Outfit({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"]
-});
-
-const ovo = Ovo({
-  subsets: ["latin"],
-  weight: ["400"]
-});
-
+﻿import './globals.css';
 
 export const metadata = {
-  title: "Ruchi Singh | Full Stack Developer",
-  description: "Portfolio of Ruchi Singh, a Full Stack Developer specializing in React, Node.js, and AI/ML solutions.",
-  icons: {
-    icon: '/favicon.ico',
+  title: 'Ruchi Singh | Full-Stack & Mobile Developer',
+  description: 'Full-stack and mobile developer building Flutter applications, Node.js backends, secure payment systems, and AI integrations. Explore Ruchi Singh’s work and experience.',
+  openGraph: {
+    title: 'Ruchi Singh | Full-Stack & Mobile Developer',
+    description: 'From mobile interfaces to backend systems and production delivery. Selected work, engineering experience, and contact details.',
+    type: 'website',
   },
 };
 
 export default function RootLayout({ children }) {
-  return (
-    <html lang="en" className="scroll-smooth dark">
-      <body className="min-h-screen w-full px-0 overflow-x-hidden dark:bg-[#18181b]">
-        {children}
-      </body>
-    </html>
-  );
+  return <html lang="en"><body>{children}</body></html>;
 }
