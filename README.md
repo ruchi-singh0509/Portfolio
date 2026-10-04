@@ -1,99 +1,30 @@
-# Portfolio – Ruchi Singh
+﻿# Ruchi Singh — Developer Portfolio
 
-A modern, responsive, and accessible developer portfolio built with [Next.js](https://nextjs.org/), [React](https://react.dev/), and [Tailwind CSS](https://tailwindcss.com/).  
-Showcasing full-stack projects, professional experience, and a contact form for collaboration.
+A Next.js portfolio presenting full-stack and mobile engineering work, with a muted ivory, navy, and sage design.
 
----
+## Local development
 
-## 🚀 Features
-
-- **Beautiful, Responsive Design:**  
-  Fully responsive layout with light/dark mode, vibrant gradients, and modern UI/UX.
-
-- **Professional Sections:**  
-  - **Header:** Introduction, profile image, and quick action buttons (Email, Resume).
-  - **Navbar:** Smooth navigation with active section highlighting and theme toggle.
-  - **About:** Bio, skills, and tools with interactive cards.
-  - **Services:** Overview of backend, frontend, full-stack, and AI/ML offerings.
-  - **Work:** Portfolio grid with real project images, descriptions, and external links.
-  - **Contact:** Accessible contact form with email integration.
-  - **Footer:** Social links, source code link, and copyright.
-
-- **Accessibility:**  
-  Keyboard navigation, descriptive alt text, and color contrast for all users.
-
-- **Performance:**  
-  Optimized images, lazy loading, and SEO-friendly structure.
-
-- **Source Code:**  
-  [View this portfolio’s source code on GitHub](https://github.com/ruchi-singh0509/Portfolio.git)
-
----
-
-## 🛠️ Getting Started
-
-### 1. **Clone the Repository**
-```bash
-git clone https://github.com/ruchi-singh0509/Portfolio.git
-cd Portfolio
-```
-
-### 2. **Install Dependencies**
-```bash
-npm install
-# or
-yarn install
-```
-
-### 3. **Run the Development Server**
-```bash
+```sh
+npm ci
 npm run dev
-# or
-yarn dev
 ```
-Open [http://localhost:3000](http://localhost:3000) to view the site.
 
----
+Open http://localhost:3000. Use `npm run lint` and `npm run build` to validate changes. Use `npm run start` to preview the production build.
 
-## 📝 Customization
+## Editing
 
-- **Add/Edit Projects:**  
-  Update `assets/assets.js` and `components/Work.jsx` to showcase your own work.
-- **Change Profile/Resume:**  
-  Replace the profile image and PDF in the `public/` directory.
-- **Edit Content:**  
-  All main sections are in the `components/` folder for easy editing.
+- `data/portfolio.js`: experience, projects, skills, credentials, resume URL, and Vidur website/store links.
+- `components/Portfolio.jsx`: page sections, navigation, and contact interactions.
+- `components/Icon.jsx`: inline monochrome SVG icons.
+- `app/globals.css`: typography, colors, spacing, and responsive layouts.
+- `public/Resume_Ruchi_Singh.pdf`: current resume.
+- `app/icon.svg`: RS initials favicon.
+- `app/layout.js`: page metadata.
 
----
+The site uses a text wordmark and no profile photograph. Contact options include email, copying the email address, phone, LinkedIn, and GitHub. Vidur includes links to the product website, Google Play, and the App Store.
 
-## 🌐 Deployment
+Navigation indicates the visible section. On mobile, the menu uses vertical links and closes on outside click or Escape. Vidur engineering highlights expand to show implementation details.
 
-### **Deploy on Vercel**
-1. Push your code to GitHub.
-2. Go to [Vercel](https://vercel.com/), import your repo, and deploy.
-3. Optionally, add a custom domain in Vercel’s dashboard.
+## Review notes
 
----
-
-## 🤝 Contributing
-
-Contributions are welcome!  
-Feel free to fork the repo, open issues, or submit pull requests.
-
----
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
----
-
-## 🙋‍♂️ Contact
-
-- **Email:** ruchisinghmech0509@gmail.com
-- **LinkedIn:** [Ruchi Singh](https://www.linkedin.com/in/ruchi-singh-100956166)
-- **GitHub:** [ruchi-singh0509](https://github.com/ruchi-singh0509)
-
----
-
-**Built with passion and modern web technologies.**
+See `PORTFOLIO_REVIEW.md` for content decisions and next improvements, and `ASSET_CLEANUP.md` for the full list of removed unused assets and obsolete components.
